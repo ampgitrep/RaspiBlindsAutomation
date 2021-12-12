@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-background-dark is-max-desktop">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
@@ -7,25 +7,27 @@
   <title>Blind Automation</title>
 </head>
 
-<body class="has-background-grey-dark is-justify-content-center">
-  <section class="section has-background-dark ">
-    <div class="container">
+<body class="has-background-grey-dark is-max-desktop has-text-centered">
+  <section class="section has-background-dark is-flex-wrap-wrap">
+    <div class="container is-fluid">
       <h1 class="title has-text-white">
         Window Blinds Automation
       </h1>
-      <p class="subtitle has-text-white-ter">
-        Please choose a function: <strong class="has-text-grey-light">Up</strong> or <strong class="has-text-grey-light">Down</strong>
+      <p class="subtitle has-text-white-ter is-fluid">
+        Please choose a function: <strong class="has-text-grey-light">Up</strong> or <strong
+          class="has-text-grey-light">Down</strong>
       </p>
+      <div class="columns has-background-grey-dark has-text-centered">
+        <div class="column">
+          <a href="./?move_motors_up=true"><button onclick="submit">Move motors Up</button></a>   
+          </div>
+          <div class="column">
+          <a href="./?move_motors_down=true"><button onclick="submit">Move motors Down</button></a>
+            </div>
+        </div>
+      </div>
     </div>
   </section>
-  <div class="columns has-background-grey-dark">
-    <div class="column">
-      <a href="./?move_motors_up=true"><button onclick="submit">Move motors Up</button></a>
-    </div>
-    <div class="column">
-      <a href="./?move_motors_down=true"><button onclick="submit">Move motors Down</button></a>
-    </div>
-  </div>
 </body>
-<footer class="has-background-grey-dark"></footer>
+
 </html>
