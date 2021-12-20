@@ -10,7 +10,7 @@ python script to control the blinds with raspberry pi
   - HTML for the webpage
   - Bulma CSS for stylization
   - 5v hobby servo motor
-  - raspberry pi 2
+ 
 #### Instructions
  - The first thing you need to do is mount a servo motor with the arm attached to the draw strings of a set of venetian blinds. When activated, the servo motor will pull the cord to open and close the blinds.
  - install the latest version of Raspian (or raspbian lite for headless pi) on your rpi. https://www.raspbian.org/
