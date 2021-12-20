@@ -3,7 +3,7 @@ import socketserver
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
 import motors
-import sensors
+
 
 class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
@@ -15,9 +15,7 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
           return http.server.SimpleHTTPRequestHandler.do_GET(self)                
         query_components = parse_qs(urlparse(self.path).query) 
         
-        if sensors.read_sensor == 1:
-          print("sensors read")
-          
+
         if 'move_motors_up' in query_components:
           motors.move_motors_up()
           self.path = 'webpage.html'
